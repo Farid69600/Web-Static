@@ -1,0 +1,27 @@
+.textRouge {
+  color: red;
+}
+
+.textBleu {
+  color: blue;
+}
+
+.textVert {
+  color: green;
+}
+
+.rouge {
+  background-color: red;
+}
+
+.bleu {
+  background-color: blue;
+}
+
+.vert {
+  background-color: green;
+}
+
+#jouer {
+  font-family: Arial, Helvetica, sans-serif;
+}
