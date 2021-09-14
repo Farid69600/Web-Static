@@ -1,0 +1,95 @@
+/************* CONTENU GLOBAL **************/
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+header h1 {
+  font-size: 65px;
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: "Amatic SC", cursive;
+}
+
+header {
+  background-image: url(img/pyramides.jpeg);
+  background-size: cover;
+  background-position: center;
+  padding: 150px 50px;
+  color: white;
+  text-align: center;
+}
+
+header a {
+  color: white;
+}
+
+/****** main  *********/
+
+#destinations {
+  display: flex;
+  align-items: center;
+}
+
+#destinations img {
+  width: 25%;
+}
+
+#typesDestinations {
+  margin-left: 80px;
+}
+
+/****** 2ème section  *********/
+
+#abonnements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h2.formules {
+  text-align: center;
+}
+
+.territoire,
+.europe,
+.world {
+  border: solid 1.5px darksalmon;
+  text-align: center;
+  width: 28%;
+  padding: 15px;
+}
+
+span {
+  font-size: 20px;
+  color: darksalmon;
+}
+
+/****** 3ème section  *********/
+
+.concept {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.concept img {
+  width: 28%;
+  margin-left: 200px;
+}
+
+.concept2 a {
+  border: solid 1.5px darksalmon;
+  color: darksalmon;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.concept2 {
+  margin: 10px;
+}
