@@ -1,0 +1,147 @@
+/****** CLASSES GLOBAL ******/
+
+.container {
+  width: 80%;
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/****** HEADER ******/
+
+header {
+  background-image: url(img/detoxcuresmoothie.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 150px;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+header img {
+  width: 50%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header h1 {
+  padding-bottom: 50px;
+  padding-top: 150px;
+}
+
+/****** SECTION NOTRE DEVISE ******/
+
+#devise {
+  display: flex;
+  align-items: center;
+}
+
+#devise img {
+  width: 30%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#notreDevise {
+  margin-left: 50px;
+}
+
+#notreDevise h2 {
+  font-size: 18px;
+  text-align: center;
+}
+
+#notreDevise p {
+  font-size: 13px;
+}
+
+/****** SECTION METHODE FABRICATION ******/
+
+.degrade {
+  background: linear-gradient(#feb4c3, #f59e28);
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.fab img {
+  width: 10%;
+  padding-top: 50px;
+}
+
+.fab {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+/****** SECTION LE CONCEPT ******/
+
+#concepts {
+  display: flex;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.concept {
+  text-align: center;
+}
+
+/****** FOOTER ******/
+
+footer {
+  background-color: #f59e28;
+  color: white;
+  text-align: center;
+  font-size: 8px;
+  padding: 5px;
+}
+
+/***** MEDIA QUERIES *******/
+
+/* CSS pour Tablette 768< x <991px */
+@media (min-width: 768px) and (max-width: 991px) /*************** RESPONSIVE MOBILE ***************/ /* css qui s'appliquera de 0px à 767px = MOBILE */ @media (max-width: 767px) {
+  #devise {
+    flex-direction: column;
+  }
+  #notreDevise {
+    margin-left: 0;
+  }
+
+  #concepts {
+    flex-direction: column;
+  }
+
+  header img {
+    margin-right: 100px;
+  }
+}

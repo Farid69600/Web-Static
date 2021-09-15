@@ -43,7 +43,7 @@ header a {
   margin-left: 80px;
 }
 
-/****** 2ème section  *********/
+/****** section abonnements  *********/
 
 #abonnements {
   display: flex;
@@ -68,7 +68,7 @@ span {
   color: darksalmon;
 }
 
-/****** 3ème section  *********/
+/****** section CONCEPT *********/
 
 .concept {
   display: flex;
@@ -92,4 +92,9 @@ span {
 
 .concept2 {
   margin: 10px;
+}
+
+.concept2 a:hover {
+  color: white;
+  background-color: darksalmon;
 }
