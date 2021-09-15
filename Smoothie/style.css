@@ -128,8 +128,10 @@ footer {
 
 /***** MEDIA QUERIES *******/
 
-/* CSS pour Tablette 768< x <991px */
-@media (min-width: 768px) and (max-width: 991px) /*************** RESPONSIVE MOBILE ***************/ /* css qui s'appliquera de 0px à 767px = MOBILE */ @media (max-width: 767px) {
+/*************** RESPONSIVE MOBILE ***************/
+/* css qui s'appliquera de 0px à 767px = MOBILE */
+
+@media (max-width: 767px) {
   #devise {
     flex-direction: column;
   }
@@ -143,5 +145,9 @@ footer {
 
   header img {
     margin-right: 100px;
+  }
+
+  #notreDevise p {
+    text-align: center;
   }
 }
