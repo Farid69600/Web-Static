@@ -1,0 +1,474 @@
+/************************** 
+* CSS GENERAL
+*************************/
+
+/************************** 
+* CLASSES GLOBAL
+*************************/
+.btn {
+  background-color: rgb(124, 40, 99);
+  padding: 8px;
+  display: inline-block;
+  color: white;
+}
+
+.btn:hover {
+  background-color: yellow;
+}
+
+.maxLargeur {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************************* 
+* TYPOGRAPHIE 
+**************************/
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/***********
+* HEADER 
+************/
+
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitness.jpg);
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed;
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav #burger {
+  display: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding-right: 30px;
+}
+
+header div {
+  padding-bottom: 180px;
+  padding-top: 80px;
+}
+
+header div p {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 1%;
+}
+
+header div h1 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 900;
+  margin: 30px 0px 0px 0px;
+  line-height: 90%;
+}
+
+header nav img {
+  width: 60px;
+}
+
+/************************ 
+* 2 IMAGES SOUS HEADER 
+*************************/
+
+.crossfit {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitnessman.jpg);
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  color: white;
+  padding: 70px 70px;
+}
+
+.fullboy {
+  background-image: linear-gradient(
+      to top right,
+      rgba(124, 40, 99, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url(../img/fitnesswoman.jpg);
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  color: white;
+  padding: 70px 70px;
+}
+
+.sousHeader {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+}
+
+/****************************************
+* SECTION OBJECTIF ET VOTRE PROGRESSION
+*****************************************/
+
+.objectif {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.appareils {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  flex-wrap: wrap;
+}
+
+.appareils article {
+  border-top: solid 1px rgba(31, 29, 29, 0.151);
+  border-left: solid 1px rgba(31, 29, 29, 0.151);
+  padding: 60px 30px;
+  width: 25%;
+}
+
+.appareils article:first-child {
+  border-left: none;
+}
+
+.appareils article img {
+  width: 40px;
+}
+
+.appareils article p {
+  font-size: 15px;
+}
+
+/***************************************
+* SECTION FITCLUB, LE FITNESS AUTREMENT
+****************************************/
+
+.fitclub {
+  background-image: linear-gradient(
+      to right,
+      rgba(124, 40, 99, 0.233) 55%,
+      rgb(0, 0, 0) 55%
+    ),
+    url(../img/crossfit.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: end;
+  align-items: flex-end;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.fitclub div {
+  width: 40%;
+  padding-right: 200px;
+}
+
+.fitclub div h2 {
+  margin-left: -150px;
+}
+
+/**********************
+* BLOCS 6 PICTOS
+***********************/
+
+.blocsPictos ul {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0px 0px -16px 0px;
+}
+
+.blocsPictos ul li {
+  width: calc(100% / 3);
+  padding: 70px 30px;
+}
+
+.blocsPictos ul li:nth-of-type(odd) {
+  background-color: rgba(46, 46, 43, 0.233);
+}
+
+.blocsPictos ul li img {
+  width: 40px;
+}
+
+/**********************
+* CARTE IFRAME
+***********************/
+
+iframe {
+  width: 100%;
+  /* position: absolute;
+  z-index: 0; */
+  top: 50;
+}
+
+/**********************
+* FOOTER
+***********************/
+
+footer {
+  background-color: black;
+  border-top: solid 10px rgb(124, 40, 99);
+  color: white;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50px;
+  margin-top: -78px;
+}
+
+.contenuFooter {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/**********************
+* FOOTER GAUCHE
+***********************/
+
+footer nav img {
+  width: 60px;
+}
+
+.footerGauche .fab {
+  padding-left: 10px;
+}
+
+.footerGauche .pictoGauche i {
+  margin-left: 10px;
+  margin-right: 0;
+  display: inline-block;
+  /* padding-right: 50px; */
+}
+
+.footerGauche {
+  text-align: right;
+  width: 24%;
+}
+
+/**********************
+* FOOTER DROIT
+***********************/
+
+.footerDroit {
+  width: 24%;
+}
+
+.footerDroit .fas {
+  color: rgb(124, 40, 99);
+}
+
+.footerDroit .fas span {
+  color: white;
+  margin-left: 10px;
+}
+
+/**********************
+* FORMULAIRE
+***********************/
+footer form {
+  text-align: center;
+  width: 48%;
+  background-color: white;
+  padding: 60px 40px 40px 60px;
+  color: black;
+  position: relative;
+  z-index: 2;
+  top: -160px;
+}
+
+form.form-exemple .textForm {
+  padding-bottom: 40px;
+}
+
+form.form-exemple input {
+  border: none;
+  background-color: transparent;
+  color: black;
+}
+
+form.form-exemple input.btnEnvoyer {
+  background-color: rgb(124, 40, 99);
+  color: white;
+  padding: 20px;
+}
+
+.btnEnvoyer:hover {
+  background-color: red !important;
+}
+
+form.form-exemple .form-exemple1 {
+  text-align: left;
+  border-bottom: solid 2px black;
+  margin-bottom: 70px;
+}
+
+/**********************
+* MEDIA-QUERIES TABLETTE
+***********************/
+/* css qui s'appliquera qu'à partir de 768px jusqu'à 991px = TABLETTE */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .blocsPictos ul li {
+    width: 50%;
+  }
+  .blocsPictos ul li:nth-of-type(odd) {
+    background-color: white;
+  }
+
+  .blocsPictos ul li:nth-of-type(2),
+  .blocsPictos ul li:nth-of-type(3),
+  .blocsPictos ul li:nth-of-type(6) {
+    background-color: rgba(46, 46, 43, 0.233);
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/**********************
+* MEDIA-QUERIES MOBILE
+***********************/
+/* css qui s'appliquera de 0px à 767px = MOBILE */
+
+@media (max-width: 767px) {
+  /* burger */
+
+  header nav {
+    background: rgb(124, 40, 99);
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px 20px;
+  }
+  header nav ul {
+    height: 0;
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 60px;
+    background: rgb(124, 40, 99);
+    padding: 10px;
+  }
+  header nav ul li {
+    width: 100%;
+    padding: 20px;
+    margin-left: 0;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  header nav #burger {
+    display: block;
+    appearance: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  header nav #burger::before {
+    content: "\f0c9";
+  }
+  header nav #burger:checked::before {
+    content: "\f00d";
+  }
+  header nav #burger:checked + ul {
+    height: auto;
+  }
+
+  /* fin burger */
+
+  .sousHeader {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -80px;
+  }
+
+  .appareils article {
+    width: 50%;
+  }
+
+  .fitclub {
+    background: black;
+  }
+
+  .fitclub div h2 {
+    margin-left: 0px;
+    padding-bottom: 30px;
+  }
+
+  .fitclub div p {
+    padding-bottom: 40px;
+  }
+
+  .fitclub div {
+    width: 100%;
+    padding-right: 0px;
+    padding: 0px 250px 0px 250px;
+  }
+  .blocsPictos ul li {
+    padding: 70px 30px;
+    width: 100%;
+  }
+
+  /* footer */
+
+  footer {
+    background-color: black;
+    border-top: solid 10px rgb(124, 40, 99);
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+
+  .contenuFooter {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer form {
+    top: -50px;
+    order: -1;
+  }
+
+  footer .footerGauche {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+  footer .footerDroit {
+    text-align: left;
+    padding-bottom: 10px;
+  }
+}

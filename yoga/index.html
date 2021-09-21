@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mandali&family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <title>Yoga</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href=""><img src="img/logo.png" alt="logo blanc"></a>
+            <ul>
+                <li><a href="#">Concept</a></li>
+                <li><a href="#">Cours</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div classe="titre">
+            <h1>YOGASALOON</h1>
+            <p>Votre salon de yoga détente et apéro rigolo !</p>
+            <a href="#" class="btn">Découvrir</a>
+        </div>
+    </header>
+
+    <!-- FIN HEADER -->
+
+    <main>
+        <section>
+            <h2>Le concept YOGASALOON</h2>
+        </section>
+
+
+        <section>
+            <article class="contYogasaloon karim">
+                <img class="cercle" src="img/mat@2x.png " alt="icone matelas">
+                <div>
+                    <h3>Profitez d'une séance de yoga vinyasa d'1h</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti odit sit? Lorem ipsum
+                        dolor sit amet consectetur, adipisicing elit. Voluptas sequi incidunt aliquid repellat aperiam
+                        eos dolorem tempora, odit nihil ullam.</p>
+                </div>
+            </article>
+
+            <article class="contYogasaloon">
+                <img class="cercle" src="img/drink-list@2x.png " alt="icone boisson1">
+                <div>
+                    <h3>Détendez vous après la séance en choisissant votre boisson parmis un large choix</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti odit sit? Lorem ipsum
+                        dolor sit amet consectetur, adipisicing elit. Voluptas sequi incidunt aliquid repellat aperiam
+                        eos dolorem tempora, odit nihil ullam.</p>
+                </div>
+            </article>
+
+            <article class="contYogasaloon karim">
+                <img class="cercle" src="img/drink@2x.png " alt="icone boisson2">
+                <div>
+                    <h3>Dégustez votre boisson avec des accompagnements healthy faits maison</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum corrupti odit sit? Lorem ipsum
+                        dolor sit amet consectetur, adipisicing elit. Voluptas sequi incidunt aliquid repellat aperiam
+                        eos dolorem tempora, odit nihil ullam.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- FIN CONCEPT YOGASALOON -->
+
+        <section>
+            <h2>Les cours YOGASALOON</h2>
+
+            <article class="cours">
+                <img src="img/yoga.jpg " alt="icone yoga">
+                <div>
+                    <h3>Du vinyasa en veux-tu en voilà</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet temporibus natus corrupti
+                        assumenda! Blanditiis dignissimos quae hic minima. Veritatis hic a odit consectetur quia
+                        aspernatur nesciunt ullam perferendis, maxime aliquam! Veritatis hic a odit consectetur quia
+                        aspernatur nesciunt ullam.</p>
+                </div>
+            </article>
+        </section>
+
+        <!-- FIN COURS YOGASALOON -->
+
+
+        <section id="contact">
+            <h2>Contact - Suivre un cours</h2>
+
+            <form action="traitement.php">
+
+                <ul>
+                    <li>
+                        <p>Etre rappelé :</p>
+                        <input type="radio" id="aujourdHui" name="call" value="aujourd'hui">
+                        <label class="btn" for="aujourdHui">Aujourd'hui</label>
+
+                        <input type="radio" id="demain" name="call" value="">
+                        <label class="btn" for="demain">Demain</label>
+
+                        <input type="radio" id="PlusTard" name="call" value="">
+                        <label class="btn" for="PlusTard">Plus tard</label>
+                    </li>
+
+
+                    <li>
+                        <input type="text" name="name" placeholder="Nom Prénom">
+                    </li>
+
+                    <li>
+                        <input type="email" name="email" placeholder="Email">
+                    </li>
+
+
+                    <li>
+                        <label for="choice">Vous êtes intéressé par :</label>
+                        <select name="choice" id="choice">
+                            <option value=""> Yoga</option>
+                            <option value=""> Pilate</option>
+                            <option value=""> Boxe</option>
+                            <option value=""> Danse</option>
+                        </select>
+                    </li>
+
+                    <li>
+                        <input type="submit" value="envoyer" class="btn">
+                    </li>
+                </ul>
+
+            </form>
+        </section>
+
+        <!-- FIN CONTACT / FORMULAIRE -->
+
+        <footer>
+            <p>2019 AH</p>
+        </footer>
+
+
+    </main>
+
+</body>
+
+
+</html>
