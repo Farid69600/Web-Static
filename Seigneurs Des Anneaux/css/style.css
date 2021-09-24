@@ -1,0 +1,331 @@
+/*****************
+* CSS GLOBAL
+*****************/
+
+.container {
+  max-width: 1060px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/****************
+* TYPOGRAPHIE
+*****************/
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Unicase", serif;
+}
+
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 35px;
+}
+
+/*****************
+* HEADER
+******************/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)),
+    url(../img/perso.jpeg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+header .banniere ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px 0 0 0;
+}
+
+.banniere ul li {
+  padding-right: 20px;
+  font-family: "Cormorant Unicase", serif;
+}
+
+.banniere .logo img {
+  width: 50%;
+}
+
+header .banniere .titre {
+  padding-bottom: 230px;
+  padding-top: 150px;
+}
+
+header .banniere .titre h1 {
+  margin: 0;
+}
+
+header .banniere .titre p {
+  margin: 0;
+}
+
+/***********************
+* SECTION l'AVENTURE
+***********************/
+
+.titreAventure {
+  text-align: center;
+  padding: 50px 0;
+}
+
+section ul {
+  display: flex;
+  justify-content: space-between;
+  counter-reset: my-awesome-counter;
+}
+
+section ul li {
+  counter-increment: my-awesome-counter;
+  position: relative;
+  padding-left: 5px;
+}
+
+section ul h3::before {
+  content: " 0" counter(my-awesome-counter);
+  color: rgba(79, 17, 34, 0.2);
+  font-size: 85px;
+  font-weight: bold;
+  position: absolute;
+  top: 1px;
+  left: 0;
+}
+
+section ul h3 {
+  margin-left: 20px;
+  line-height: 20px;
+}
+
+/**********************************
+* SECTION LA COMMUNAUTE/9 IMAGES
+***********************************/
+.communaute {
+  border: solid 1px rgb(79, 17, 34);
+  margin-top: px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.titreCommunaute h3 {
+  margin-bottom: 0;
+}
+
+.titreCommunaute p {
+  margin-top: 15px;
+}
+
+.titreCommunaute {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+.communaute ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.communaute ul img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.communaute ul li {
+  width: calc(100% / 3);
+}
+.communaute ul li p {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.communaute ul li h3 {
+  margin-bottom: 0;
+}
+
+/********************
+* ARTICLE GOLLUM
+*********************/
+.gollum {
+  margin-bottom: 100px;
+}
+
+.gollum1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gollum1 img {
+  width: 30%;
+}
+
+.gollum1 div {
+  margin-left: 60px;
+}
+.gollum1 div h2 {
+  margin-bottom: 0px;
+}
+
+/********************
+* FOOTER GANDALF
+*********************/
+
+footer {
+  margin-top: 80px;
+  background-color: rgb(79, 17, 34);
+  color: white;
+}
+
+.gandalf {
+  background-image: url(../img/gandalf.jpg);
+  background-size: cover;
+  background-position: center 30%;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.gandalf a {
+  border: white solid 2px;
+  padding: 10px 30px;
+  font-family: "Cormorant Unicase", serif;
+  display: inline-block;
+  margin: 15px 0;
+  font-family: "Cormorant Unicase", serif;
+  font-size: 20px;
+}
+
+footer .basPage {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin-bottom: 5px;
+}
+
+footer .basPage img {
+  height: 40%;
+}
+
+footer .basPage aside {
+  margin-bottom: -90px;
+}
+
+/**********************
+* MEDIA-QUERIES MOBILE
+***********************/
+/* css qui s'appliquera de 0px à 767px = MOBILE */
+
+@media (max-width: 767px) {
+  /* HEADER */
+
+  header {
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 240%;
+  }
+
+  header .banniere .titre h1 {
+    font-size: 45px;
+    text-align: center;
+    line-height: 50px;
+  }
+  header .banniere .titre p {
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 40px;
+    padding-bottom: 70px;
+  }
+
+  .banniere ul li {
+    display: none;
+  }
+
+  header .banniere .titre {
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+  /* FIN HEADER */
+
+  /* L'AVENTURE */
+
+  .titreAventure {
+    padding: 20px 0;
+  }
+
+  .titreAventure p {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+  .titreAventure p {
+    font-size: 15px;
+    padding: 0 15px;
+  }
+
+  .aventure ul li {
+    margin-bottom: 10px;
+  }
+
+  /* FIN L'AVENTURE */
+
+  /* LA COMMUNAUTE */
+  section ul {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .communaute ul img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .communaute ul li {
+    width: calc(100% / 2);
+  }
+
+  /* GOLLUM */
+
+  .gollum1 {
+    flex-direction: column;
+  }
+
+  .gollum1 img {
+    width: 100%;
+  }
+
+  .gollum1 div {
+    margin-left: 0px;
+  }
+
+  .gollum1 div h2 {
+    line-height: 35px;
+  }
+
+  .gollum1 div p {
+    font-size: 15px;
+    padding-bottom: 0;
+  }
+  /* FIN GOLLUM */
+
+  /* FOOTER  GANDALF*/
+
+  footer .basPage {
+    padding: 0 10px;
+  }
+
+  .gandalf {
+    background-size: center;
+    background-position: 20%;
+  }
+}
