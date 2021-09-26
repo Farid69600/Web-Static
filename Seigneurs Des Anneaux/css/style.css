@@ -210,15 +210,15 @@ footer .basPage {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
-  margin-bottom: 5px;
+  /* margin-bottom: 50px; */
 }
 
 footer .basPage img {
-  height: 40%;
+  height: 50%;
 }
 
 footer .basPage aside {
-  margin-bottom: -90px;
+  height: 150px;
 }
 
 /**********************
