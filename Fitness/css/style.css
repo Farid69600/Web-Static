@@ -394,12 +394,19 @@ form.form-exemple .form-exemple1 {
     font-size: 30px;
     cursor: pointer;
   }
+
+  /* Par défaut, on souhaite que ce soit un icon burger. On vient donc attribuer le unicode correspondant dans le contenu de son ::before : */
   header nav #burger::before {
     content: "\f0c9";
   }
+
+  /* Quand on a cliqué dessus, il est considéré que la checkbox est cochée, on vient changer le content du before.
+   */
   header nav #burger:checked::before {
     content: "\f00d";
   }
+
+  /* cible la ul au clic */
   header nav #burger:checked + ul {
     height: auto;
   }

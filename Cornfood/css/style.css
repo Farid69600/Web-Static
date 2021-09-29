@@ -1,0 +1,284 @@
+/*************** CSS GLOBAL ************/
+
+:root {
+  --rose: 234, 145, 145;
+  --bleu: 75, 73, 117;
+  --jaune: 230, 179, 49;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-weight: 700px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400px;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Rockwell", sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/******* TYPOGRAPHIES *************/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+
+@font-face {
+  font-family: "Rockwell";
+  src: url(../Rockwell.ttf) format("truetype");
+}
+
+/******* HEADER **********/
+
+header {
+  background-image: linear-gradient(
+      to top right,
+      rgba(var(--rose), 0.7),
+      rgba(var(--bleu), 0.7)
+    ),
+    url(../img/photo.jpeg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+header nav img {
+  height: 60px;
+}
+
+header ul a {
+  color: white;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+header .btn {
+  color: rgba(var(--rose, 0.7));
+  background-color: white;
+  border-radius: 50px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2);
+  padding: 8px 25px;
+  margin-top: 30px;
+  margin-bottom: 220px;
+}
+
+.btn:hover {
+  background-color: rgb(var(--rose));
+  color: white;
+}
+
+header h1 {
+  padding-top: 50px;
+}
+header p {
+  padding-top: 22px;
+  font-family: Rockwell, serif;
+}
+
+header::after {
+  content: " ";
+  width: 50px;
+  height: 50px;
+  background: white;
+  transform: rotate(45deg);
+  position: absolute;
+  bottom: -25px;
+  left: calc(50% - 25px);
+}
+
+/******* FIN HEADER **********/
+
+/******** SECTION 4 PICTOS ************/
+.gouter h2::before {
+  content: "";
+  background-image: url(../img/grain.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 180px;
+  background-color: #e6b331;
+  position: absolute;
+  z-index: -1;
+  top: -70px;
+  left: -50px;
+}
+
+.gouter h2 {
+  margin-left: 60px;
+  position: relative;
+  color: #4b4975;
+}
+
+.gouter1 {
+  margin-top: 120px;
+}
+
+.pictos img {
+  width: 35px;
+  margin-right: 15px;
+  margin-bottom: 50px;
+}
+/******** FIN SECTION 4 PICTOS ************/
+
+/******** SECTION PRODUITS 3 IMAGES ************/
+
+.produits {
+  border-radius: 25px;
+}
+
+.produits h2 {
+  color: #e6b331;
+}
+
+.produits h3 {
+  color: rgb(var(--bleu));
+}
+.produits img {
+  width: 200px;
+}
+
+/******** FIN SECTION PRODUITS 3 IMAGES ************/
+
+/******** FOOTER ************/
+/* FORMULAIRE */
+footer {
+  background-image: linear-gradient(
+    to top right,
+    rgba(var(--bleu), 0.7)-20%,
+    rgba(var(--rose), 0.7),
+    rgba(var(--jaune), 0.7)
+  );
+  padding: 50px 0;
+}
+
+form input {
+  background-color: rgba(255, 255, 255, 0.452);
+  border-radius: 25px;
+  width: 500px;
+  margin-bottom: 10px;
+  border: none;
+}
+
+::placeholder {
+  color: white;
+  padding: 10px;
+}
+
+.btn {
+  color: white;
+  width: 100px;
+  background-color: rgba(var(--rose), 0.7);
+  border-radius: 25px;
+  margin-left: 200px;
+  margin-top: -30px;
+  position: relative;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+form textarea {
+  background-color: rgba(255, 255, 255, 0.452);
+  border-radius: 25px;
+  width: 500px;
+  padding-left: 10px;
+  border: none;
+}
+/* FIN FORMULAIRE */
+
+/* CONTACT GAUCHE */
+
+.mail img {
+  width: 45px;
+  margin-top: 35px;
+}
+
+.pin img {
+  width: 37px;
+  margin-top: 35px;
+  margin-left: 75px;
+}
+
+article {
+  position: relative;
+}
+
+article .contact::after {
+  content: "";
+  width: 1px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+  left: 35px;
+}
+
+article .contact::before {
+  content: "";
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 120px;
+  left: 75px;
+}
+
+article .pin::before {
+  content: "";
+  width: 1px;
+  height: 40px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  top: 160px;
+  left: 150px;
+}
+
+footer p {
+  color: white;
+  margin: 55px 0 50px 75px;
+}
+
+footer article h2 {
+  margin-bottom: 30px;
+}
+
+.reseau img {
+  width: 40px;
+  padding-right: 15px;
+}
+
+.reseau {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
