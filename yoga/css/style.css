@@ -13,10 +13,11 @@ body {
   color: black !important;
   background-color: white;
   padding: 8px 18px;
-  border-radius: 30px;
+  border-radius: 50px;
   display: inline-block;
   margin-top: 10px;
-  box-shadow: 0 3px 7px #000000;
+  box-shadow: 2 3px 8px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
 
 .btn:hover,
@@ -37,19 +38,9 @@ h2::after {
 h2 {
   color: #6e8e9b;
   margin-top: 60px;
-  font-size: 30px;
-}
-
-/****************** 
-* TYPOGRAPHIES 
-******************/
-h1,
-h2 {
+  font-size: 28px;
   font-family: "Mandali", sans-serif;
-}
-
-p {
-  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 }
 
 /****** HEADER ******/
@@ -80,30 +71,32 @@ header nav img {
   margin-left: 20px;
 }
 
+header h1 {
+  font-family: "Mandali", sans-serif;
+  margin: 0;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: 8px;
+}
+
 /****** SECTION CONCEPT ET COURS YOGASALOON ******/
 
 .contYogasaloon {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
-/* @media (min-width: 991px) #c {
+.contYogasaloon:nth-of-type(odd) {
   flex-direction: row-reverse;
-} */
-
-.contYogasaloon div {
-  margin-left: 50px;
 }
-
-.cercle {
-  border-radius: 50%;
-  padding: 25px;
-  box-shadow: 2px 2px 3px rgba(10, 10, 10, 0.219);
-}
+/* On vient inverser l'ordre d'affichage grâce au row-reverse. On utlise la pseudo-classe nth-of-type() et le mot odd afin de cibler uniquement les impairs (1ere li, 3ème, ...). */
 
 .contYogasaloon img {
-  width: 8%;
+  width: 80px;
+  border-radius: 100%;
+  padding: 15px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  margin: 50px;
 }
 /*********** 2ème partie COURS YOGASALOON ************/
 .cours {
@@ -114,8 +107,8 @@ header nav img {
 }
 
 .cours img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   object-position: 80%;
 }
@@ -157,8 +150,10 @@ header nav img {
   display: none;
 }
 
-#contact form input[type="radio"] + label {
+#contact form input[type="radio"]:checked + label {
   margin-left: 30px;
+  background-color: #6e8e9b;
+  color: white !important;
 }
 
 /*********** FOOTER ************/
